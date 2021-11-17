@@ -1,1 +1,1 @@
-Portfolio contendo todas as atividades feitas durante a Trybe
+Portfolio contendo todas as atividades feitas durante a Trybe.
