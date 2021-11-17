@@ -1,2 +1,2 @@
 # Trybe-exercises
-Exercicios feitos durante a trybe
+Exercicios feitos durante a trybe.
