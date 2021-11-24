@@ -1,0 +1,12 @@
+p ,h1, ol, ul {
+    text-align: center;
+}
+p:active, h1:active, li:active {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif  ;
+}
+ol:hover {
+    background: #d2d2d2
+}
+ol ,ul {
+    list-style: none;
+}
