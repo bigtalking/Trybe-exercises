@@ -10,6 +10,10 @@
         border-color: black;
         border-style: solid;
       }
+      button{
+        border: none;
+        border-radius: 5px;
+      }
 
       .title {
         text-align: center;
@@ -41,11 +45,39 @@
         <p>Trybe</p>
       </section>
     </main>
+    <button onclick="trocaTexto()">trocaTexto</button>
+    <button onclick="verde()">verde</button>
+    <button onclick="branco()">branco</button>
+    <button onclick="titulo()">titulo</button>
+    <button onclick="maiusculo()">maiusculo</button>
+    <button onclick="textoConsole()">console</button>
     <script>
+        texto = document.getElementsByTagName('p')
         function trocaTexto(){
-            texto = document.getElementsByTagName('p')
-            texto.innerHTML = 'Ja vou estar trabalhando com programação a quase um ano e já vou ser um otimo desenhista'
+            for(a of texto){
+              a.innerText = 'Ja vou estar trabalhando com programação a quase um ano e já vou ser um otimo desenhista'
+            }
         }
+        function verde(){
+          document.getElementsByClassName('main-content')[0].style.background = 'rgb(76,164,109)'
+        }
+        function branco(){
+          document.getElementsByClassName('center-content')[0].style.background = 'white'
+        }
+        function titulo(){
+          document.getElementsByClassName('title')[0].innerText = 'Exercício 5.1 - JavaScript'
+        }
+        function maiusculo(){
+            for(a of texto){
+              a.innerText = a.innerText.toUpperCase()
+            }
+        }
+        function textoConsole() {
+          for(a of texto){
+              console.log(a.innerText)
+            }
+        }
+
         
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
